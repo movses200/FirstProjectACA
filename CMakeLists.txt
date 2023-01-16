@@ -10,5 +10,5 @@ target_link_libraries(functions_test PRIVATE functions)
 enable_testing()
 
 find_package(GTest CONFIG REQUIRED)
-target_link_libraries(functions_test PRIVATE GTest::gmock GTest::gtest GTest::gmock_main GTest::gtest_main)
+target_link_libraries(functions_test PRIVATE GTest::gtest GTest::gtest_main)
 add_test(functions_gtest functions_test)

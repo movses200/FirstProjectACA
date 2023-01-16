@@ -27,6 +27,7 @@ int count_of_one(int number){
         if(number%2==1){
             count++;
         }
+        number/=2;
     }
     return count;
 }
@@ -40,6 +41,7 @@ bool is_prime(int number){
         if(number%i==0){
             return false;
         }
+        i++;
     }
     return true;
 }   
